@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Leave Management System - Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h2>Leave Management System</h2>
+        <h3>Login</h3>
+
+        <label>Select Role</label>
+        <select id="role">
+          <option value="student">Student</option>
+          <option value="admin">Admin</option>
+        </select>
+
+        <div id="studentLogin">
+          <input
+            type="text"
+            id="studentReg"
+            placeholder="Enter Register Number"
+          />
+        </div>
+
+        <div id="adminLogin" style="display: none">
+          <input type="text" id="adminUser" placeholder="Username" />
+          <input type="password" id="adminPass" placeholder="Password" />
+        </div>
+
+        <button onclick="login()">Login</button>
+        <p id="errorMsg" class="error"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

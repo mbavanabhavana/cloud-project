@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Apply Leave</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h2>Apply Leave</h2>
+
+        <form id="leaveForm">
+          <input type="text" id="name" placeholder="Student Name" required />
+          <input
+            type="text"
+            id="regno"
+            placeholder="Register Number"
+            required
+          />
+          <input
+            type="text"
+            id="reason"
+            placeholder="Reason for Leave"
+            required
+          />
+          <label>From Date</label>
+          <input type="date" id="fromDate" required />
+          <label>To Date</label>
+          <input type="date" id="toDate" required />
+
+          <button type="submit">Submit Leave</button>
+        </form>
+
+        <br />
+        <a href="studentStatus.html">View My Leave Status</a><br /><br />
+        <a href="login.html">Logout</a>
+
+        <p id="errorMsg" class="error"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
